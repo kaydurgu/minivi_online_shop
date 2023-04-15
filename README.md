@@ -13,10 +13,11 @@ MiniVi Online Clothes Shop is a Django web application that allows administrator
 
 # Search
 Users can search for products by entering a search term into the search bar on the homepage or on the product listing page. The search function supports a variety of search queries, including product name, description, brand, and more. Search results are displayed in real-time as the user types, making it easy to quickly find the desired product.
-
+<br>
 
 ![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/navigation.gif)
 
+<br>
 
 ## Categories and Brands
 You can aslo navigate by set of categories and brands that users can use to navigate the product catalog. Categories and brands are displayed prominently on the homepage and product listing page, making it easy for users to quickly filter and browse products by category or brand.
@@ -35,25 +36,39 @@ The filter feature is flexible and customizable, allowing users to easily search
 
 
 
-
 ![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/filter.gif)
+<br>
 
 
-
-# Admin dashboard and Customer Order Placement
 
 ## Admin Dashboard
+
+
 The administrator panel includes a dashboard that allows administrators to view and manage orders placed by customers. The dashboard provides a quick overview of order , making it easy for administrators to track orders and manage fulfillment.
 
-
+<br>
 
 ![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/customer%20order%20and%20admin%20dashboard.gif)
 
+<br>
 
 
 ## Customer Order Placement
 
 The ability for customers to place orders and for administrators to view and manage those orders is a key feature of the MiniVi Online Clothes Shop, providing a streamlined and efficient shopping experience for both parties.
+<br>
+
+![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/customer%20order%20and%20admin%20dashboard.gif)
+
+<br>
+
+# Admin Panel
+The administrator panel provides a centralized location for managing products. Administrators can easily add new products, update existing products, and remove products that are no longer available. The panel includes a user-friendly interface that makes it easy for administrators to manage the product catalog, including adding product images, descriptions, prices, and more.
+<br>
+
+![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/adminka.gif)
+
+<br>
 
 ## Installation
 
