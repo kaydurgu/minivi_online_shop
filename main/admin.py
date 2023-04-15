@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Banner,Category,Brand,Color,Size,Product,ProductAttribute,CartOrder,CartOrderItems,ProductReview,Wishlist,UserAddressBook
+from .models import OrderAnon,Banner,Category,Brand,Color,Size,Product,ProductAttribute,CartOrder,CartOrderItems,ProductReview,Wishlist,UserAddressBook
 
 # admin.site.register(Banner)
 admin.site.register(Brand)
 admin.site.register(Size)
-
+admin.site.register(OrderAnon)
 
 class BannerAdmin(admin.ModelAdmin):
 	list_display=('alt_text','image_tag')

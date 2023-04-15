@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.html import mark_safe
 from django.contrib.auth.models import User
+from autoslug import AutoSlugField
 # Banner
 class Banner(models.Model):
     img=models.ImageField(upload_to="banner_imgs/")
@@ -137,7 +138,12 @@ class OrderAnon(models.Model):
     quan= models.IntegerField()
     phone_number = models.CharField(max_length=12)
     address = models.CharField(max_length=30)
-# Product Review
+    class Meta:
+        verbose_name_plural='9.All Orders'
+
+    def __str__(self) -> str:
+        return self.customer_name + ' ' + self.product.title
+# Product Review 
 RATING=(
     (1,'1'),
     (2,'2'),

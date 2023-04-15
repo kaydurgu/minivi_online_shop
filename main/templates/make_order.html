@@ -42,26 +42,28 @@
 
 
 <div class="container">
-<form>
+ 
+<form action = "/order_details/{{data.id}}" method = "post">
+    {% csrf_token %}
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="inputEmail4">Имя</label>
-        <input type="text" class="form-control" placeholder="Имя">
+        <label for="inputname">Имя</label>
+        <input type="text" id="name"  name = 'name' class="form-control" placeholder="Имя">
       </div>
       <div class="form-group col-md-2">
-        <label for="inputEmail4">Количество</label>
-        <input type="text" class="form-control" placeholder="Количество">
+        <label for="qunatity">Количество</label>
+        <input type="text" id="qunatity"  name = 'qunatity' class="form-control" placeholder="Количество">
       </div>
     </div>
     <div class="form-group">
       <label for="inputAddress2">Адрес</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Адрес">
+      <input type="text" id="address" name ='address' class="form-control" id="inputAddress2" placeholder="Адрес">
     </div>
     <div class="form-group">
         <label for="inputAddress2">Номер телефона</label>
-        <input type="tel" id="typePhone" placeholder="Номер телефона" class="form-control" />
+        <input type="tel" id="phone" name = 'phone' id="typePhone" placeholder="Номер телефона" class="form-control" />
     </div>
-    <a  href="/order_details/{{data.id}}" type="submit" class="btn btn-primary"> Отправить</a>
+    <input type="submit" class="btn btn-primary"> Отправить</a>
   </form>
 </div>
 {% endblock %}

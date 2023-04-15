@@ -7,6 +7,7 @@ from django.template.loader import render_to_string
 from .forms import SignupForm,ReviewAdd,AddressBookForm,ProfileForm, OrderAnon
 from django.contrib.auth import login,authenticate
 from django.contrib.auth.decorators import login_required
+from .models import OrderAnon
 # Home Page
 def home(request):
 	banners=Banner.objects.all().order_by('-id')
@@ -91,8 +92,16 @@ def make_order(request,id):
 
 	return render(request,'make_order.html', {'data':product })
 def order_details(request,id):
+	neworder = OrderAnon()
+	neworder.product = Product.objects.get(id = id)
+	neworder.customer_name = request.POST['name']
+	neworder.phone_number  = request.POST['phone']
+	neworder.quan =  request.POST['qunatity']
+	neworder.address = request.POST['address']
+	neworder.save()
 	product=Product.objects.get(id=id)
-	return render(request,'order_detail.html', {'data':product})
+	print(neworder)
+	return render(request,'order_detail.html', {'data':neworder})
 
 # Filter Data
 def filter_data(request):
@@ -267,7 +276,7 @@ def my_dashboard(request):
 
 # My Orders
 def my_orders(request):
-	orders=CartOrder.objects.filter(user=request.user).order_by('-id')
+	orders=OrderAnon.objects.all()
 	return render(request, 'user/orders.html',{'orders':orders})
 
 # Order Detail
