@@ -1,4 +1,4 @@
-# minivi_online_shop
+# MiniVi
 
 MiniVi Online Clothes Shop is a Django web application that allows administrators to add new goods and manage existing ones. Users can browse through the available products, and send their purchase requests.
 
@@ -34,7 +34,11 @@ To use the filter feature, simply select the desired filter criteria from the av
 The filter feature is flexible and customizable, allowing users to easily search for specific products that fit their unique needs. Whether you're looking for a specific brand, size, or price range, the filter feature makes it easy to find the perfect product.
 
 
+
+
 ![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/filter.gif)
+
+
 
 # Admin dashboard and Customer Order Placement
 
@@ -42,7 +46,9 @@ The filter feature is flexible and customizable, allowing users to easily search
 The administrator panel includes a dashboard that allows administrators to view and manage orders placed by customers. The dashboard provides a quick overview of order , making it easy for administrators to track orders and manage fulfillment.
 
 
+
 ![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/customer%20order%20and%20admin%20dashboard.gif)
+
 
 
 ## Customer Order Placement
