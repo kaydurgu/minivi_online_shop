@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'pggni(t+5rj@%zzmpw#orp_pmx2r%xo9v8_q_t#6wo@pf+n3sp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app' , 'now.sh','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -140,5 +141,5 @@ LOGOUT_REDIRECT_URL='login'
 
 JET_SIDE_MENU_COMPACT = True
 
-
+django_heroku.settings(locals())
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
