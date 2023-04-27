@@ -48,7 +48,7 @@ The administrator panel includes a dashboard that allows administrators to view 
 
 <br>
 
-![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/customer%20order%20and%20admin%20dashboard.gif)
+![](https://github.com/kaydurgu/minivi_online_shop/blob/main/gif/adminka.gif)
 
 <br>
 
