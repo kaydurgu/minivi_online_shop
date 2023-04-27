@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.html import mark_safe
 from django.contrib.auth.models import User
-from autoslug import AutoSlugField
 # Banner
 class Banner(models.Model):
     img=models.ImageField(upload_to="banner_imgs/")
