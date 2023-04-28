@@ -66,27 +66,8 @@
 			</table>
 		</div>
 			</h3>
-			<div class="card">
-				<div class="card-body review-list" style="max-height: 400px; overflow: auto;">
-					<!-- Detail -->
-					{% if reviews %}
-						{% for review in reviews %}
-						<blockquote class="blockquote text-right">
-						  <small>{{review.review_text}}</small>
-						  <footer class="blockquote-footer">{{review.user}} 
-						  	<cite title="Source Title">
-						  		{% for star in review.review_rating|ljust:review.review_rating %}
-						  		<i class="fa fa-star text-warning"></i>
-								{% endfor %}
-						  	</cite>
-						  </footer>
-						</blockquote>
-						<hr />
-						{% endfor %}
-					{% else %}
-						<p class="no-data">Add First Review</p>
-					{% endif %}
-				</div>
+			<div class="card col-md-6">
+				 
 			</div>
 		</div>
 	</div>
