@@ -197,11 +197,6 @@ def my_wishlist(request):
 	wlist=Wishlist.objects.filter(user=request.user).order_by('-id')
 	return render(request, 'user/wishlist.html',{'wlist':wlist})
 
-# My Reviews
-def my_reviews(request):
-	reviews=ProductReview.objects.filter(user=request.user).order_by('-id')
-	return render(request, 'user/reviews.html',{'reviews':reviews})
-
 # My AddressBook
 def my_addressbook(request):
 	addbook=UserAddressBook.objects.filter(user=request.user).order_by('-id')
